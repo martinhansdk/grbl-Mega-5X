@@ -4,5 +4,7 @@
 *.elf
 *.DS_Store
 *.d
+.pio
+.vscode
 
 README.md
