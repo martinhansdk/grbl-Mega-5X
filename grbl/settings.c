@@ -251,7 +251,9 @@ uint8_t settings_store_global_setting(uint8_t parameter, float value) {
           case 3: settings.max_travel[parameter] = -value; break;  // Store as negative for grbl internal use.
           case 4:
             settings.current[parameter] = value;
+            #ifdef HAS_DIGIPOTS
             set_current(parameter, settings.current[parameter]);
+            #endif
             break;
           case 5:
             settings.endstop_adj[parameter] = value;
