@@ -334,7 +334,7 @@
   #define CONTROL_RESET_BIT         1  // Pin A9 - RAMPS Aux 2 Port
   #define CONTROL_FEED_HOLD_BIT     2  // Pin A10 - RAMPS Aux 2 Port
   #define CONTROL_CYCLE_START_BIT   3  // Pin A11 - RAMPS Aux 2 Port
-  #define CONTROL_SAFETY_DOOR_BIT   4  // Pin A12 - RAMPS Aux 2 Port
+  #define CONTROL_SAFETY_DOOR_BIT   7  // Pin A15 - RAMPS T2 Port
   #define CONTROL_INT       PCIE2  // Pin change interrupt enable pin
   #define CONTROL_INT_vect  PCINT2_vect
   #define CONTROL_PCMSK     PCMSK2 // Pin change interrupt register
@@ -344,7 +344,7 @@
   #define PROBE_DDR       DDRK
   #define PROBE_PIN       PINK
   #define PROBE_PORT      PORTK
-  #define PROBE_BIT       7  // MEGA2560 Analog Pin 15
+  #define PROBE_BIT       4  // MEGA2560 Analog Pin A12 - Ramps Aux 2 Port
   #define PROBE_MASK      (1<<PROBE_BIT)
 
   // Advanced Configuration Below You should not need to touch these variables
