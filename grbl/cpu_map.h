@@ -311,9 +311,9 @@
   #define DISABLE_HW_LIMITS_INTERUPT
 
   // Define spindle enable and spindle direction output pins.
-  #define SPINDLE_ENABLE_DDR      DDRG
-  #define SPINDLE_ENABLE_PORT     PORTG
-  #define SPINDLE_ENABLE_BIT      5 // MEGA2560 Digital Pin 4 - Ramps 1.4 Servo 4 Signal pin (D4)
+  #define SPINDLE_ENABLE_DDR      DDRH
+  #define SPINDLE_ENABLE_PORT     PORTH
+  #define SPINDLE_ENABLE_BIT      6 // MEGA2560 Digital Pin 9 - Ramps 1.4 12v output
   #define SPINDLE_DIRECTION_DDR   DDRE
   #define SPINDLE_DIRECTION_PORT  PORTE
   #define SPINDLE_DIRECTION_BIT   3 // MEGA2560 Digital Pin 5 - Ramps 1.4 Servo 3 Signal pin (D5)
@@ -322,9 +322,9 @@
   #define COOLANT_FLOOD_DDR   DDRB
   #define COOLANT_FLOOD_PORT  PORTB
   #define COOLANT_FLOOD_BIT   4 // MEGA2560 Digital Pin 10 - Ramps 1.4 12v output
-  #define COOLANT_MIST_DDR    DDRH
-  #define COOLANT_MIST_PORT   PORTH
-  #define COOLANT_MIST_BIT    6 // MEGA2560 Digital Pin 9 - Ramps 1.4 12v output
+  #define COOLANT_MIST_DDR    DDRG
+  #define COOLANT_MIST_PORT   PORTG
+  #define COOLANT_MIST_BIT    5 // MEGA2560 Digital Pin 4 - Ramps 1.4 Servo 4 Signal pin (D4)
 
   // Define user-control CONTROLs (cycle start, reset, feed hold) input pins.
   // NOTE: All CONTROLs pins must be on the same port and not on a port with other input pins (limits).
